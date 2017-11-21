@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	clear: both;
+	display: inline-block;
+	width: 503px;
+	height: 500px;
+	position: fixed;
+	top: calc(50% - 290px);
+	left: calc(50% - 250px);
+}
+.square{
+	display: inline-block;
+	float: left;
+	width: 166px;
+	height: 166px;
+	box-sizing: border-box;
+}
+.winner {
+	color: green;
+}
+.square.fa:before {
+	font-size: 183px;
+	position: relative;
+}
+.square.fa-circle-o:before {
+	top: -9px;
+	left: 4px;
+}
+.square.fa-times:before {
+	left: 10px;
+	top: -15px;
+}	
+.active {
+	cursor: pointer;
+}
+[data-node="0"],
+[data-node="1"],
+[data-node="3"],
+[data-node="4"] {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+[data-node="2"],
+[data-node="5"] {
+	border-bottom: 1px solid black;
+}
+[data-node="6"],
+[data-node="7"] {
+	border-right: 1px solid black;
+}
+button {
+	width: 250px;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid black;
+	height: 75px;
+	position: fixed;
+	font-size: 24px;
+    left: calc(50% - 126px);
+    top: calc(50% + 265px);
+	cursor: pointer;
+}
